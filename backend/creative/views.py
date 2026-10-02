@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import generics
+from .models import CreativeWork
+from .serializers import CreativeWorkSerializer
 
-# Create your views here.
+
+class CreativeWorkListView(generics.ListAPIView):
+    queryset = CreativeWork.objects.all()
+    serializer_class = CreativeWorkSerializer
