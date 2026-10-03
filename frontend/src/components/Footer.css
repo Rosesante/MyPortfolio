@@ -1,0 +1,36 @@
+.footer {
+  border-top: 1px solid rgba(46, 87, 153, 0.1);
+  background: #f8fafc;
+  padding: 35px 6%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #697386;
+}
+
+.footer-name {
+  color: #2e5799;
+  font-weight: 600;
+}
+
+.footer-tagline {
+  font-size: 14px;
+  color: #697386;
+}
+
+@media (max-width: 650px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-soft: #f1f5f9;
+  --text: #172033;
+  --text-soft: #475569;
+  --border: rgba(23, 32, 51, 0.12);
+
+  --primary: #2e5799;
+  --primary-light: #597ebe;
+  --orange: #fbb02e;
+  --orange-dark: #d78628;
+  --light-blue: #a6cbf5;
+  --lime: #c5e32e;
+}
+
+[data-theme="dark"] {
+  --bg: #05070b;
+  --surface: #0d1118;
+  --surface-soft: #121923;
+  --text: #f5f7fa;
+  --text-soft: #aab4c3;
+  --border: rgba(255, 255, 255, 0.1);
+
+  --primary: #597ebe;
+  --primary-light: #a6cbf5;
+  --orange: #fbb02e;
+  --orange-dark: #d78628;
+  --light-blue: #a6cbf5;
+  --lime: #c5e32e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+a {
+  font-family: inherit;
+}
